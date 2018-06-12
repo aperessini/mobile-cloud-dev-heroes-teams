@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CS496FinalPeressini</string>
+    <string name="hero_input_title">Create New Hero</string>
+    <string name="hero_name_input">Name: </string>
+    <string name="hero_bop_input">Base of Operations: </string>
+    <string name="hero_race_input">Race: </string>
+    <string name="hero_solo_input">Go Solo? </string>
+    <string name="hero_team_up_input">Select Team: </string>
+    <string name="hero_power_input">Main Superpower: </string>
+    <string name="hero_button_input">Add Hero</string>
+    <string name="hero_list">Current Heroes</string>
+    <string name="current_name">Current Name: </string>
+
+
+    <string name="team_input_title">Create New Team</string>
+    <string name="team_name_input">Team Name: </string>
+    <string name="team_date_input">Assembled Date: (YYYYMMDD)</string>
+    <string name="team_heroes_input">Heroes: </string>
+    <string name="team_leader_input">Leader: </string>
+    <string name="team_button_input">Add Team</string>
+    <string name="team_list">Current Teams</string>
+
+    <string name="update_hero_button">Update Hero</string>
+    <string name="delete_hero_button">Delete Hero</string>
+    <string name="update_team_button">Update Team</string>
+    <string name="delete_team_button">Delete Team</string>
+    <string name="create_team_button">Create/View Teams</string>
+    <string name="create_hero_button">Create/View Heroes</string>
+    <string name="update_delete_heroes_button">Update/Delete Heroes</string>
+    <string name="update_delete_teams_button">Update/Delete Teams</string>
+</resources>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateHeroes">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_ch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/create_hero_button" />
+
+                <Button
+                    android:id="@+id/button_ct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/create_team_button" />
+
+                <Button
+                    android:id="@+id/button_ut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/update_delete_teams_button" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/delete_hero_button"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight=".75"
+                    android:gravity="center"
+                    android:text="@string/hero_name_input" />
+
+                <Spinner
+                    android:id="@+id/hero_delete_spin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight=".25">
+
+                </Spinner>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_dh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_hero_button" />
+
+            <TextView
+                android:id="@+id/hero_deleted_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/update_hero_button"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight=".75"
+                    android:gravity="center"
+                    android:text="@string/current_name" />
+
+                <Spinner
+                    android:id="@+id/hero_update_spin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight=".25" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight=".75"
+                    android:gravity="center"
+                    android:text="@string/hero_name_input" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/update_hero_name_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight=".75"
+                    android:gravity="center"
+                    android:text="@string/hero_bop_input" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/update_hero_bop_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight=".75"
+                    android:gravity="center"
+                    android:text="@string/hero_race_input" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/update_hero_race_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight=".75"
+                    android:gravity="center"
+                    android:text="@string/hero_power_input" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/update_hero_power_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check_solo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:paddingRight="275dp"
+                    android:text="@string/hero_solo_input"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight=".75"
+                    android:gravity="center"
+                    android:text="@string/hero_team_up_input" />
+
+                <Spinner
+                    android:id="@+id/team_up_spin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight=".25" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_up_hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update_hero_button" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
